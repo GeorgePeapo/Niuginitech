@@ -84,30 +84,32 @@ a{color:inherit;text-decoration:none}
   .grid{grid-template-columns:1fr}
 }
 .card{
-  border:1px solid var(--border);border-radius:18px;
+  border:1px solid var(--border);
+  border-radius:18px;
   background:rgba(255,255,255,.03);
-  padding:16px;display:flex;gap:12px
+  padding:16px;
+  display:flex;
+  flex-direction: column;
+  gap:12px;
 }
+
 /* Product image container */
-.thumb {
-  width: 100%;
-  height: 180px;              /* consistent card height */
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,.04);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.thumb{
+  width:100%;
+  height:180px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.04);
+  overflow:hidden;
 }
 
 /* Product image */
-.thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;          /* fills card nicely */
-  object-position: center;
-  display: block;
+.thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;       /* use 'contain' if you don't want cropping */
+  object-position:center;
+  display:block;
 }
 
 
