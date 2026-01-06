@@ -1,30 +1,32 @@
 [
   {
-  "id": "bilum-handmade-01",
-  "name": "Handmade Bilum Bag",
-  "price_kina": 120,
-  "category": "Blouses & Bilums",
-  "type": "physical",
-  "tags": ["featured"],
-  "image": "assets/products/bilum-01.jpg",
-  "desc": "Traditional handmade bilum using local materials. Strong and unique design."
-},
-{
-  "id": "meri-blouse-01",
-  "name": "Meri Blouse (Traditional Design)",
-  "price_kina": 80,
-  "category": "Blouses & Bilums",
-  "type": "physical",
-  "tags": ["sale"],
-  "image": "assets/products/blouse-01.jpg",
-  "desc": "Colorful meri blouse, suitable for office and cultural events."
-}
+    "id": "bilum-handmade-01",
+    "name": "Handmade Bilum Bag",
+    "price_kina": 120,
+    "category": "Blouses & Bilums",
+    "type": "physical",
+    "tags": ["featured"],
+    "image": "assets/products/bilum-01.jpg",
+    "desc": "Traditional handmade bilum using local materials. Strong and unique design."
+  },
+  {
+    "id": "meri-blouse-01",
+    "name": "Meri Blouse (Traditional Design)",
+    "price_kina": 80,
+    "category": "Blouses & Bilums",
+    "type": "physical",
+    "tags": ["sale"],
+    "image": "assets/products/blouse-01.jpg",
+    "desc": "Colorful meri blouse, suitable for office and cultural events."
+  },
 
   {
     "id": "ssd-256",
     "name": "Laptop SSD Upgrade (256GB)",
     "price_kina": 350,
     "category": "PC & Laptop",
+    "type": "service",
+    "tags": ["featured"],
     "image": "assets/ssd.svg",
     "desc": "Upgrade your laptop/PC with a fast 256GB SSD. Includes installation (labor + basic setup)."
   },
@@ -33,14 +35,18 @@
     "name": "Office Network Setup (Small)",
     "price_kina": 900,
     "category": "Networking",
+    "type": "service",
+    "tags": [],
     "image": "assets/network.svg",
-    "desc": "Router + switch setup, Wi\u2011Fi configuration, printer sharing (small office)."
+    "desc": "Router + switch setup, Wi-Fi configuration, printer sharing (small office)."
   },
   {
     "id": "cctv-2",
-    "name": "CCTV Installation (2 Cameras) \u2014 Labor",
+    "name": "CCTV Installation (2 Cameras) — Labor",
     "price_kina": 1200,
     "category": "Security",
+    "type": "service",
+    "tags": [],
     "image": "assets/cctv.svg",
     "desc": "2-camera CCTV installation labor (mounting + cabling + NVR setup). Hardware quoted separately."
   },
@@ -49,18 +55,22 @@
     "name": "Website Package (Basic)",
     "price_kina": 1500,
     "category": "Web Services",
+    "type": "service",
+    "tags": [],
     "image": "assets/web.svg",
-    "desc": "1\u20133 page website, contact form, mobile-friendly layout. Hosting/domain optional."
+    "desc": "1–3 page website, contact form, mobile-friendly layout. Hosting/domain optional."
   },
   {
     "id": "support-remote",
     "name": "Remote ICT Support (1 Hour)",
     "price_kina": 120,
     "category": "Support",
+    "type": "service",
+    "tags": [],
     "image": "assets/support.svg",
     "desc": "Remote troubleshooting for PCs, printers, email, basic network issues (per hour)."
-  }
-  [
+  },
+
   {
     "id": "laptop-hp-elitebook-01",
     "name": "HP EliteBook Laptop (Refurbished)",
@@ -101,6 +111,4 @@
     "image": "assets/products/printer-01.jpg",
     "desc": "Office printer. Installation and sharing on network available."
   }
-]
-
 ]
