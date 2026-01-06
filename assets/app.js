@@ -1,4 +1,7 @@
 const money = (k) => `K${Number(k).toFixed(2)}`;
+const STORE_WHATSAPP = "67572666985";       // my phn num
+const STORE_EMAIL = "georgepeapo@gmail.com";
+
 
 async function loadProducts(){
   const res = await fetch('./products.json', {cache:'no-store'});
@@ -186,11 +189,10 @@ function wireCheckout(){
 
     // Build WhatsApp link (user can edit number later)
     const msg = buildWhatsAppMessage(order);
-    const to = order.whatsapp.replace(/[^\d]/g,'') || '';
+    const to = STORE_WHATSAPP.replace(/[^\d]/g,'');
     const waUrl = `https://wa.me/${to}?text=${encodeURIComponent(msg)}`;
+    const mail = `mailto:${encodeURIComponent(STORE_EMAIL)}?subject=${encodeURIComponent('Niugini Tech Order')}&body=${encodeURIComponent(msg)}`;
 
-    // Also build mailto link (fallback)
-    const mail = `mailto:?subject=${encodeURIComponent('Niugini Tech Order')}&body=${encodeURIComponent(msg)}`;
 
     // show next actions
     const box = document.querySelector('#nextActions');
