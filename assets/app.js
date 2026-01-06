@@ -61,20 +61,39 @@ function buildWhatsAppMessage(order){
 async function renderShop(){
   const grid = document.querySelector('#productGrid');
   if(!grid) return;
+
   const products = await loadProducts();
 
-  grid.innerHTML = products.map(p => `
+  // Read filter from URL hash (e.g. #laptops, #routers)
+  const hash = (location.hash || "").replace("#","").toLowerCase();
+
+  const filtered = products.filter(p => {
+    const cat = (p.category || "").toLowerCase();
+
+    if(hash === "laptops") return cat.includes("laptop");
+    if(hash === "routers") return cat.includes("router") || cat.includes("wi");
+    if(hash === "networking") return cat.includes("network");
+    if(hash === "printers") return cat.includes("printer");
+    if(hash === "bilums") return cat.includes("bilum");
+    if(hash === "blouses") return cat.includes("blouse");
+
+    return true; // show all if no filter
+  });
+
+  grid.innerHTML = filtered.map(p => `
     <div class="card">
-      <div class="thumb"><img src="${p.image}" alt="" width="34" height="34"/></div>
+      <div class="thumb">
+        ${p.image ? `<img src="${p.image}" alt="${p.name}" />` : ``}
+      </div>
       <div style="flex:1">
         <div class="row" style="margin-top:0">
           <div>
             <h4>${p.name}</h4>
-            <div class="pill">${p.category}</div>
+            <div class="pill">${p.category || "General"}</div>
           </div>
           <div class="price">${money(p.price_kina)}</div>
         </div>
-        <p>${p.desc}</p>
+        <p>${p.desc || ""}</p>
         <div class="row">
           <button class="btn primary" data-add="${p.id}">Add to cart</button>
           <a class="btn" href="cart.html">View cart</a>
@@ -83,6 +102,7 @@ async function renderShop(){
     </div>
   `).join('');
 
+  // Re-attach Add to Cart buttons
   grid.querySelectorAll('[data-add]').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       const id = btn.getAttribute('data-add');
@@ -95,6 +115,7 @@ async function renderShop(){
     });
   });
 }
+
 
 function renderCart(){
   const body = document.querySelector('#cartBody');
