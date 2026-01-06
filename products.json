@@ -1,5 +1,26 @@
 [
   {
+  "id": "bilum-handmade-01",
+  "name": "Handmade Bilum Bag",
+  "price_kina": 120,
+  "category": "Blouses & Bilums",
+  "type": "physical",
+  "tags": ["featured"],
+  "image": "assets/products/bilum-01.jpg",
+  "desc": "Traditional handmade bilum using local materials. Strong and unique design."
+},
+{
+  "id": "meri-blouse-01",
+  "name": "Meri Blouse (Traditional Design)",
+  "price_kina": 80,
+  "category": "Blouses & Bilums",
+  "type": "physical",
+  "tags": ["sale"],
+  "image": "assets/products/blouse-01.jpg",
+  "desc": "Colorful meri blouse, suitable for office and cultural events."
+}
+
+  {
     "id": "ssd-256",
     "name": "Laptop SSD Upgrade (256GB)",
     "price_kina": 350,
@@ -39,4 +60,47 @@
     "image": "assets/support.svg",
     "desc": "Remote troubleshooting for PCs, printers, email, basic network issues (per hour)."
   }
+  [
+  {
+    "id": "laptop-hp-elitebook-01",
+    "name": "HP EliteBook Laptop (Refurbished)",
+    "price_kina": 1800,
+    "category": "Laptops",
+    "type": "physical",
+    "tags": ["featured"],
+    "image": "assets/products/laptop-01.jpg",
+    "desc": "Refurbished business laptop. Includes charger + basic setup. Specs confirmed on request."
+  },
+  {
+    "id": "router-tp-link-01",
+    "name": "TP-Link Wi-Fi Router (Dual Band)",
+    "price_kina": 220,
+    "category": "Routers & Wi-Fi",
+    "type": "physical",
+    "tags": ["sale"],
+    "image": "assets/products/router-01.jpg",
+    "desc": "Reliable home/office router. Setup available (extra fee)."
+  },
+  {
+    "id": "switch-8port-01",
+    "name": "Network Switch (8-Port Gigabit)",
+    "price_kina": 180,
+    "category": "Networking",
+    "type": "physical",
+    "tags": [],
+    "image": "assets/products/switch-01.jpg",
+    "desc": "8-port gigabit switch for office networks. Plug & play."
+  },
+  {
+    "id": "printer-hp-01",
+    "name": "HP Printer (Office)",
+    "price_kina": 650,
+    "category": "Printers",
+    "type": "physical",
+    "tags": [],
+    "image": "assets/products/printer-01.jpg",
+    "desc": "Office printer. Installation and sharing on network available."
+  }
+]
+
 ]
