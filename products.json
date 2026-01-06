@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ssd-256",
+    "name": "Laptop SSD Upgrade (256GB)",
+    "price_kina": 350,
+    "category": "PC & Laptop",
+    "image": "assets/ssd.svg",
+    "desc": "Upgrade your laptop/PC with a fast 256GB SSD. Includes installation (labor + basic setup)."
+  },
+  {
+    "id": "network-small",
+    "name": "Office Network Setup (Small)",
+    "price_kina": 900,
+    "category": "Networking",
+    "image": "assets/network.svg",
+    "desc": "Router + switch setup, Wi\u2011Fi configuration, printer sharing (small office)."
+  },
+  {
+    "id": "cctv-2",
+    "name": "CCTV Installation (2 Cameras) \u2014 Labor",
+    "price_kina": 1200,
+    "category": "Security",
+    "image": "assets/cctv.svg",
+    "desc": "2-camera CCTV installation labor (mounting + cabling + NVR setup). Hardware quoted separately."
+  },
+  {
+    "id": "website-basic",
+    "name": "Website Package (Basic)",
+    "price_kina": 1500,
+    "category": "Web Services",
+    "image": "assets/web.svg",
+    "desc": "1\u20133 page website, contact form, mobile-friendly layout. Hosting/domain optional."
+  },
+  {
+    "id": "support-remote",
+    "name": "Remote ICT Support (1 Hour)",
+    "price_kina": 120,
+    "category": "Support",
+    "image": "assets/support.svg",
+    "desc": "Remote troubleshooting for PCs, printers, email, basic network issues (per hour)."
+  }
+]

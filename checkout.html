@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Checkout — Niugini Tech</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="assets/app.js"></script>
+</head>
+<body>
+<div class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Niugini Tech</h1>
+        <small>Online sales • PNG ICT services</small>
+      </div>
+    </a>
+    <div class="links">
+      <a class="link" href="shop.html">Shop</a>
+      <a class="link" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+      <a class="link" href="checkout.html">Checkout</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="section-title">
+    <h3>Checkout</h3>
+    <p>Fill details and send your order via WhatsApp/Email.</p>
+  </div>
+
+  <div class="badge">Cart total: <b id="checkoutTotal" style="margin-left:6px">K0.00</b></div>
+
+  <div class="notice" style="margin-top:12px">
+    <b>Bank Transfer (optional):</b> Put your bank details here later (Kina/BSP). For now, customers can pay COD or transfer after confirmation.
+  </div>
+
+  <form id="checkoutForm" class="form" style="margin-top:12px">
+    <div>
+      <label class="small">Customer name</label>
+      <input class="input" name="name" required placeholder="e.g., John Kila" />
+    </div>
+    <div>
+      <label class="small">Phone</label>
+      <input class="input" name="phone" required placeholder="e.g., 7xxxxxxx" />
+    </div>
+    <div>
+      <label class="small">Email (optional)</label>
+      <input class="input" name="email" type="email" placeholder="e.g., name@example.com" />
+    </div>
+    <div>
+      <label class="small">Delivery / Service address</label>
+      <textarea class="input" name="address" rows="3" required placeholder="Town, province, landmark, etc."></textarea>
+    </div>
+
+    <div>
+      <label class="small">Payment method</label>
+      <select name="payment" class="input">
+        <option value="Cash on Delivery (COD)">Cash on Delivery (COD)</option>
+        <option value="Bank Transfer (after confirmation)">Bank Transfer (after confirmation)</option>
+        <option value="Online Payment (Coming soon: Kina IPG)">Online Payment (Coming soon: Kina IPG)</option>
+      </select>
+    </div>
+
+    <div>
+      <label class="small">Your WhatsApp number to receive orders</label>
+      <input class="input" name="whatsapp" placeholder="e.g., 6757xxxxxxx" />
+      <div class="small">Tip: include country code 675. If left blank, WhatsApp link will still open but may not auto-fill receiver.</div>
+    </div>
+
+    <div>
+      <label class="small">Notes (optional)</label>
+      <textarea class="input" name="notes" rows="2" placeholder="Preferred time, item details, etc."></textarea>
+    </div>
+
+    <button class="btn primary" type="submit">Create order message</button>
+  </form>
+
+  <div id="nextActions" style="margin-top:14px"></div>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="badge">🛠️ MVP Storefront • No backend • Works on GitHub Pages</div>
+    <div style="margin-top:8px">© 2026 Niugini Tech • Papua New Guinea</div>
+  </div>
+</div>
+</body>
+</html>
