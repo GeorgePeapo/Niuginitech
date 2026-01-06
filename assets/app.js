@@ -184,7 +184,6 @@ function wireCheckout(){
       address: String(fd.get('address')||''),
       payment: String(fd.get('payment')||''),
       notes: String(fd.get('notes')||''),
-      whatsapp: String(fd.get('whatsapp')||''),
     };
 
     // Build WhatsApp link (user can edit number later)
